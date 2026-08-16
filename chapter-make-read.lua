@@ -1,11 +1,10 @@
 --[[
 	Changes from upstream:
 	- support for short MM:SS time format
+	- set basename_with_ext=false by default
 
 	To install:
-	$ mkdir -p ~/.config/mpv/{scripts,script-opts}
-	$ echo "basename_with_ext=no" \
-	  >> ~/.config/mpv/script-opts/chapter_make_read.conf
+	$ mkdir -p ~/.config/mpv/scripts
 	$ ln -s <THIS_FILE> ~/.config/mpv/scripts/chapter-make-read.lua
 --]]
 
@@ -73,7 +72,7 @@ local o = {
     -- Specifies the extension of the external chapter file.
     chapter_file_ext = ".chp",
     -- Select whether the external chapter file needs to match the extension of the source file.
-    basename_with_ext = true,
+    basename_with_ext = false,
     -- Specifies the subpath of the same directory as the playback file as the external chapter file path.
     -- Note: The external chapter file is read from the subdirectory first.
     -- If the file does not exist, it will next be read from the same directory as the playback file.
