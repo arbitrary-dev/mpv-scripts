@@ -1,4 +1,15 @@
 --[[
+	Changes from upstream:
+	- support for short MM:SS time format
+
+	To install:
+	$ mkdir -p ~/.config/mpv/{scripts,script-opts}
+	$ echo "basename_with_ext=no" \
+	  >> ~/.config/mpv/script-opts/chapter_make_read.conf
+	$ ln -s <THIS_FILE> ~/.config/mpv/scripts/chapter-make-read.lua
+--]]
+
+--[[
   * chapter-make-read.lua v.2024-10-31
   *
   * AUTHORS: dyphire
